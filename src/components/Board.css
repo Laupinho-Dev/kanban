@@ -1,0 +1,66 @@
+.board {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
+}
+
+.board-header {
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.board-header h1 {
+  font-size: 2.5rem;
+  margin: 0 0 10px 0;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.board-subtitle {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin: 0;
+}
+
+.board-content {
+  max-width: 100%;
+  overflow-x: auto;
+  padding-bottom: 20px;
+}
+
+.columns-container {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 10px;
+  min-height: 500px;
+}
+
+.card-overlay {
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  transform: rotate(3deg);
+  max-width: 300px;
+}
+
+/* Scrollbar customizada */
+.board-content::-webkit-scrollbar {
+  height: 8px;
+}
+
+.board-content::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+.board-content::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+.board-content::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
